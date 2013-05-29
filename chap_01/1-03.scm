@@ -1,15 +1,15 @@
-(define (sum-of-sqaure-for-two-largest x y z)
+(define (sum-of-square-for-two-largest x y z)
      (if (= x (which-is-larger x y))
-         (sum-of-sqaures x (which-is-larger y z))
-         (sum-of-sqaures y (which-is-larger x z))
+         (sum-of-squares x (which-is-larger y z))
+         (sum-of-squares y (which-is-larger x z))
      )
 )
 
-(define (sum-of-sqaures a b)
-    (+ (sqaure a) (sqaure b))
+(define (sum-of-squares a b)
+    (+ (square a) (square b))
 )
 
-(define (sqaure number) (* number number))
+(define (square number) (* number number))
 
 (define (which-is-larger a b)
     (if (> a b)
