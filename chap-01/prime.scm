@@ -1,5 +1,3 @@
-; this is kinda janky right now.
-
 (define (prime? number)
   (= number (smallest-divisor number)))
 
@@ -15,4 +13,4 @@
   (* x x))
 
 (define (divides? a b)
-  (= remainder b a) 0)
+  (= (remainder b a) 0))
