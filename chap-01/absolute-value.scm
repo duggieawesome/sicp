@@ -1,0 +1,11 @@
+(define (absolute-value x)
+  (cond ((> x 0) x)
+        ((= x 0) 0)
+        ((< x 0) (- x))))
+  (cond ((< x 0) (- x))
+        (else x)))
+
+(define (abz x)
+  (if (< x 0)
+    (- x)
+    x))
